@@ -4,3 +4,19 @@ Year, Sales
 2021, 55000
 2022, 70000
 2023, 75000
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the data
+data = pd.read_csv('annual_sales.csv')
+
+# Create the plot
+plt.figure(figsize=(10, 6))
+plt.plot(data['Year'], data['Sales'], marker='o')
+plt.title('Annual Sales Performance Over Time')
+plt.xlabel('Year')
+plt.ylabel('Sales')
+plt.grid(True)
+plt.savefig('annual_sales_performance.png')
+plt.show()
