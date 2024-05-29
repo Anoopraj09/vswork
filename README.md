@@ -16,3 +16,9 @@ def showTables():
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
 ```
+
+|Names|Designation|
+|------|-----------|
+|DevA  | Developer |
+|DevV  | CTO  |
+
