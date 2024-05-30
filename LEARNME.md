@@ -11,6 +11,8 @@
 |2021 | 70000 |
 |2022 | 75000 |
 
+![image]
+
 
 ```python
 import pandas as pd
