@@ -74,15 +74,15 @@ fig = px.line(data, x='Year', y='Sales', title='Annual Sales Performance Over Ti
 # Show the figure
 fig.show()
 
-# Optionally, save the figure to an HTML file
-
-# Annual Sales Performence and Review
-fig.write_html('annual_sales_performance.html')
+# Optionally, save the figure to an HTML file)
 ```
+![Image](chart)
 
 ![Image](https://cdn4.vectorstock.com/i/1000x1000/83/73/happy-new-year-sale-promotion-background-design-vector-22948373.jpg)
 >>>>>>> 1ed44a7229cbedd83bb3765291cb629f7a385909
 >>>>>>>
+
+
 # Annual Sales Performence and Review
 ## Table of Contents
 
