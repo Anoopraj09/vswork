@@ -11,8 +11,6 @@
 |2021 | 70000 |
 |2022 | 75000 |
 
-![Image](https://cdn4.vectorstock.com/i/1000x1000/83/73/happy-new-year-sale-promotion-background-design-vector-22948373.jpg)
-
 
 ```python
 import pandas as pd
@@ -33,3 +31,5 @@ fig.show()
 # Optionally, save the figure to an HTML file
 fig.write_html('annual_sales_performance.html')
 ```
+
+![Image](https://cdn4.vectorstock.com/i/1000x1000/83/73/happy-new-year-sale-promotion-background-design-vector-22948373.jpg)
