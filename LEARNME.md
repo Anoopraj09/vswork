@@ -75,6 +75,8 @@ fig = px.line(data, x='Year', y='Sales', title='Annual Sales Performance Over Ti
 fig.show()
 
 # Optionally, save the figure to an HTML file
+
+# Annual Sales Performence and Review
 fig.write_html('annual_sales_performance.html')
 ```
 
