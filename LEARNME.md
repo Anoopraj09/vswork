@@ -76,7 +76,7 @@ fig.show()
 
 # Optionally, save the figure to an HTML file)
 ```
-![Image](chart.jpg)
+![Image](chart1)
 
 ![Image](https://cdn4.vectorstock.com/i/1000x1000/83/73/happy-new-year-sale-promotion-background-design-vector-22948373.jpg)
 >>>>>>> 1ed44a7229cbedd83bb3765291cb629f7a385909
