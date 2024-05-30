@@ -31,9 +31,12 @@ def showTables():
     return df
 
 def describeTable(tablename):
-    query = f"""describe {tablename};"""
+    query = f"""Describe {tablename};"""
     cursor. execute(query)
     rows = cursor.fetchall()
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
+
+def add(x,y):
+    return x+y
 
