@@ -37,6 +37,4 @@ def describeTable(table_name):
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
 
-def add(x,y):
-    return x+y
 
