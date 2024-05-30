@@ -11,7 +11,7 @@
 |2021 | 70000 |
 |2022 | 75000 |
 
-
+The followung code does this....
 ```python
 import pandas as pd
 import plotly.express as px
