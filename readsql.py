@@ -1,15 +1,13 @@
-Readme created.
 import os
 
-import pandas as pd
-import numpy as pd
+import pandas as pd 
 import mysql.connector 
 from dotenv import load_dotenv
 
 load_dotenv()
 host = os.getenv('HOST')
 username = os.getenv('USER')
-password = os.getenv('PASWORD')
+password = os.getenv('PASSWORD')
 
 connection = mysql.connector.connect(host=host,
                                      user=username,
@@ -18,10 +16,6 @@ connection = mysql.connector.connect(host=host,
 
 cursor = connection.cursor()
 
-
-
-
-
 def queryToDataFrame(query):
 
     cursor. execute(query)
@@ -29,17 +23,17 @@ def queryToDataFrame(query):
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
 
-def shoeTables():
-query = """SHOW TABLES;"""
-cursor.execute(query)
-rows = cursor.fetchall()
-df = pd.DataFrame(data=rows,columns=cursor.column_names)
-retrun df
+def showTables():
+    query = """SHOW TABLES;"""
+    cursor. execute(query)
+    rows = cursor.fetchall()
+    df = pd.DataFrame(data=rows,columns=cursor.column_names)
+    return df
 
 def describeTable(tablename):
-query = f"""describe {tablename};"""
-cursor.execute(query)
-rows = cursor.fetchall()
-df = pd.DataFrame(data=rows,columns=cursor_names)
-return df
+    query = f"""describe {tablename};"""
+    cursor. execute(query)
+    rows = cursor.fetchall()
+    df = pd.DataFrame(data=rows,columns=cursor.column_names)
+    return df
 
