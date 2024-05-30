@@ -12,7 +12,7 @@
 |2022 | 75000 |
 
 
-
+```python
 import pandas as pd
 import plotly.express as px
 
@@ -30,4 +30,4 @@ fig.show()
 
 # Optionally, save the figure to an HTML file
 fig.write_html('annual_sales_performance.html')
-
+```
