@@ -11,16 +11,23 @@
 |2021 | 70000 |
 |2022 | 75000 |
 
+
+
 import pandas as pd
 import plotly.express as px
 
-# Load the data
-url = 'https://raw.githubusercontent.com/your-username/sales-performance/main/sales_data.csv'
-data = pd.read_csv(url)
+# Create the sales data DataFrame
+data = pd.DataFrame({
+    "Year": [2018, 2019, 2020, 2021, 2022],
+    "Sales": [50000, 60000, 55000, 70000, 75000]
+})
 
-Create the line chart
+# Create the line chart
 fig = px.line(data, x='Year', y='Sales', title='Annual Sales Performance Over Time')
 
-Save the figure to an HTML file
+# Show the figure
+fig.show()
+
+# Optionally, save the figure to an HTML file
 fig.write_html('annual_sales_performance.html')
 
