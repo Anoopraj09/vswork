@@ -10,3 +10,6 @@
 |2020 | 55000 |
 |2021 | 70000 |
 |2022 | 75000 |
+
+import pandas as pd
+import plotly.express as px
