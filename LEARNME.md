@@ -84,3 +84,4 @@ fig.write_html('annual_sales_performance.html')
 >>>>>>> 1ed44a7229cbedd83bb3765291cb629f7a385909
 >>>>>>>
 # Annual Sales Performence and Review
+## Table of Contents
