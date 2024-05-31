@@ -37,4 +37,21 @@ def DescribeTable(tablename):
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
 
+import pandas as pd
+import plotly.express as px
+
+# Create the sales data DataFrame
+data = pd.DataFrame({
+    "Year": [2018, 2019, 2020, 2021, 2022],
+    "Sales": [50000, 60000, 55000, 70000, 75000]
+})
+
+# Create the line chart
+fig = px.line(data, x='Year', y='Sales', title='Annual Sales Performance Over Time')
+
+# Show the figure
+fig.show()
+
+# Optionally, save the figure to an HTML file
+fig.write_html('annual_sales_performance.html')
 
