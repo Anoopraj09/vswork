@@ -30,14 +30,10 @@ def showTables():
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
 
-def DescribeTable(tablename):
+def Describe_Table(tablename):
     query = f"""DESCRIBE {tablename};"""
     cursor. execute(query)
     rows = cursor.fetchall()
     df = pd.DataFrame(data=rows,columns=cursor.column_names)
     return df
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 23cbee77afaa8be7696deb66de989ad8fe27e21a
